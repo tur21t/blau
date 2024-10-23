@@ -1,3 +1,4 @@
+// Carousell for users reviews
 const scrollContainer = document.getElementById('cards-container');
 const scrollAmount = 300; // Customize the scroll distance
 
@@ -31,9 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const phone = document.getElementById('contact-form-phone').value;
     const location = document.getElementById('contact-form-location').value;
     const rooms = document.getElementById('rooms').value;
+
+    // Get the selected permission value (either "Si" or "No")
     const permission =
-      document.querySelector('input[name="permission"]:checked')
-        ?.nextElementSibling.textContent || null;
+      document.querySelector('input[name="permission"]:checked')?.value || null;
+
     const comment = document.getElementById('comment').value.trim();
 
     // Create the JSON object
