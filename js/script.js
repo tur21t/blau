@@ -15,30 +15,39 @@ document.getElementById('scroll-right').onclick = function () {
   });
 };
 
-//orm's submit action to make a request to an backend
-document.querySelector('form').addEventListener('submit', function (event) {
-  event.preventDefault();
+//form's submit action to make a request to backend
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the form element
+  const form = document.getElementById('contact-form');
 
-  const formData = {
-    name: document.getElementById('contact-form-name').value,
-    email: document.getElementById('contact-form-email').value,
-    phone: document.getElementById('contact-form-phone').value,
-    location: document.getElementById('contact-form-location').value,
-    comment: document.getElementById('comment').value,
-  };
+  // Listen for form submission
+  form.addEventListener('submit', function (event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
 
-  fetch('/send-email', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.text())
-    .then((data) => {
-      alert('Message sent successfully');
-    })
-    .catch((error) => {
-      alert('Error sending message');
-    });
+    // Get the form data
+    const name = document.getElementById('contact-form-name').value;
+    const email = document.getElementById('contact-form-email').value;
+    const phone = document.getElementById('contact-form-phone').value;
+    const location = document.getElementById('contact-form-location').value;
+    const rooms = document.getElementById('rooms').value;
+    const permission =
+      document.querySelector('input[name="permission"]:checked')
+        ?.nextElementSibling.textContent || null;
+    const comment = document.getElementById('comment').value.trim();
+
+    // Create the JSON object
+    const formData = {
+      name: name,
+      email: email,
+      phone: phone,
+      location: location,
+      rooms: rooms,
+      permission: permission,
+      comment: comment,
+    };
+
+    // Log the JSON object to the console
+    console.log(JSON.stringify(formData));
+  });
 });

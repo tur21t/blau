@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -551,7 +551,7 @@
                 <div class="w-full max-w-lg">
                   <div class="leading-loose">
                     
-                    <form class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75">
+                    <form id="contact-form" class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75">
                       <p class="mb-8 text-2xl font-light text-center text-gray-700">
                           Contact us
                       </p>
@@ -569,12 +569,12 @@
 
                         <div class="col-span-2 lg:col-span-1">
                           <div class=" relative ">
-                            <input type="text" id="contact-form-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="phone"/>
+                            <input type="text" id="contact-form-phone" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="phone" required/>
                           </div>
                         </div>
                         <div class="col-span-2 lg:col-span-1">
                           <div class=" relative ">
-                            <input type="text" id="contact-form-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="location"/>
+                            <input type="text" id="contact-form-location" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="location"/>
                           </div>
                         </div>
 
@@ -614,7 +614,7 @@
                                 </span>
                             </label>
                             <label class="inline-flex items-center">
-                                <input type="radio" name="vehicle" class="w-5 h-5 text-red-600"/>
+                                <input type="radio" name="permission" class="w-5 h-5 text-red-600"/>
                               <span class="ml-2 text-gray-700">
                                 No
                               </span>
@@ -623,7 +623,7 @@
 
                         <div class="col-span-2">
                             <label class="text-gray-700" for="name">
-                              <textarea class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" id="comment" placeholder="Enter your comment" name="comment" rows="5" cols="40">
+                              <textarea id="comment" class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"  placeholder="Enter your comment" name="comment" rows="5" cols="40">
                               </textarea>
                             </label>
                         </div>
