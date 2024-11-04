@@ -18,39 +18,33 @@ document.getElementById('scroll-right').onclick = function () {
 
 //form's submit action to make a request to backend
 document.addEventListener('DOMContentLoaded', function () {
-  // Get the form element
   const form = document.getElementById('contact-form');
 
-  // Listen for form submission
   form.addEventListener('submit', function (event) {
-    // Prevent the default form submission behavior
     event.preventDefault();
 
-    // Get the form data
-    const name = document.getElementById('contact-form-name').value;
-    const email = document.getElementById('contact-form-email').value;
-    const phone = document.getElementById('contact-form-phone').value;
-    const location = document.getElementById('contact-form-location').value;
-    const rooms = document.getElementById('rooms').value;
-
-    // Get the selected permission value (either "Si" or "No")
-    const permission =
-      document.querySelector('input[name="permission"]:checked')?.value || null;
-
-    const comment = document.getElementById('comment').value.trim();
-
-    // Create the JSON object
-    const formData = {
-      name: name,
-      email: email,
-      phone: phone,
-      location: location,
-      rooms: rooms,
-      permission: permission,
-      comment: comment,
+    // Prepare form data for EmailJS
+    const params = {
+      name: document.getElementById('contact-form-name').value,
+      email: document.getElementById('contact-form-email').value,
+      phone: document.getElementById('contact-form-phone').value,
+      location: document.getElementById('contact-form-location').value,
+      rooms: document.getElementById('rooms').value,
+      permission:
+        document.querySelector('input[name="permission"]:checked')?.value || '',
+      comment: document.getElementById('comment').value.trim(),
     };
 
-    // Log the JSON object to the console
-    console.log(JSON.stringify(formData));
+    // Sending the email using EmailJS
+    emailjs.send('service_2mazvr7', 'template_g52izg9', params).then(
+      function (response) {
+        alert('Thank you for your message! We will contact you soon');
+        console.log('Email sent successfully:', response.status, response.text);
+      },
+      function (error) {
+        alert('An error occurred. Please try again.');
+        console.error('Failed to send email:', error);
+      }
+    );
   });
 });
