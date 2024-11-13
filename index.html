@@ -528,76 +528,135 @@
     <!-- price section -->
     <section>
       <!-- <br> -->
-      <div  id="price" class="bg-gradient-to-br from-blue-400 to-green-100 border-t border-gray-400 flex flex-col justify-center items-center md:flex-row gap-2">
+      <div  id="price" class="bg-gradient-to-br from-blue-400 to-green-100 border-t border-gray-300 flex flex-col justify-center items-center md:flex-row gap-2 p-6">
    
-        <!-- Payment Card 1 -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-6 max-w-sm">
-          <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Pago único</h2>
-          <p class="text-center text-4xl font-bold text-gray-800 mb-4">895€</p>
-          <ul class="text-gray-700 space-y-2 mb-6">
-            <li>✔️ 10 módulos en sesiones en directo</li>
-            <li>✔️ 1 sesión de seguimiento, para casos prácticos y preguntas, un mes más tarde de haber acabado la formación.</li>
-            <li>✔️ Grabación de las sesiones (disponibles durante un año)</li>
-            <li>✔️ Ejercicios y prácticas</li>
-            <li>✔️ PDF descargables</li>
-            <li>✔️ Audios con meditaciones</li>
-          </ul>
-          <button type="submit" 
-          class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500  hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
-          onclick="window.location.href='#contact-us';"
-          >
-            Reservo mi plaza
-          </button>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Payment Card 1 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-2 max-w-sm w-full h-full flex flex-col justify-between">
+            <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Gestión Básica</h2>
+            <p class="text-center text-4xl font-bold text-gray-800 mb-4">895€</p>
+            <ul class="text-gray-700 space-y-2 mb-6">
+              <li>✔️ Publicación en los principales canales (Airbnb, Booking.com, VRBO)</li>
+              <li>✔️ Configuración inicial y optimización de anuncios</li>
+              <li>✔️ Gestión básica de reservas y calendario</li>
+              <li>✔️ Asistencia a los huéspedes 24/7</li>
+              <li>✔️ Informes mensuales de rendimiento</li>
+            </ul>
+            <button type="submit" 
+            class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            onclick="window.location.href='#contact-us';">
+              ¡Solicitar ahora!
+            </button>
+          </div>
+        
+          <!-- Payment Card 2 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-2 max-w-sm w-full h-full flex flex-col justify-between">
+            <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Gestión Completa</h2>
+            <p class="text-center text-4xl font-bold text-gray-800 mb-4">447,5€ x 2 pagos</p>
+            <ul class="text-gray-700 space-y-2 mb-6">
+              <li>✔️ Todo lo incluido en Gestión Básica</li>
+              <li>✔️ Dinámicas de precios para maximizar ingresos</li>
+              <li>✔️ Supervisión y coordinación de limpieza y lavandería</li>
+              <li>✔️ Atención personalizada a los huéspedes</li>
+              <li>✔️ Acceso a nuestra plataforma de gestión</li>
+            </ul>
+            <button type="submit" 
+            class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            onclick="window.location.href='#contact-us';">
+              ¡Contratar!
+            </button>
+          </div>
+        
+          <!-- Payment Card 3 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-2 max-w-sm w-full h-full flex flex-col justify-between">
+            <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Gestión Premium</h2>
+            <p class="text-center text-4xl font-bold text-gray-800 mb-4">523,5€ x 2 pagos</p>
+            <ul class="text-gray-700 space-y-2 mb-6">
+              <li>✔️ Todo lo incluido en Gestión Completa</li>
+              <li>✔️ Fotografía profesional inmobiliaria</li>
+              <li>✔️ Optimización avanzada de anuncios</li>
+              <li>✔️ Consultoría personalizada para mejorar la ocupación</li>
+              <li>✔️ Reuniones de seguimiento trimestrales</li>
+            </ul>
+            <button type="submit" 
+            class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            onclick="window.location.href='#contact-us';">
+              ¡Descubre más!
+            </button>
+          </div>
         </div>
         
-        <!-- Payment Card 2 -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-6 max-w-sm">
-          <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">2 pagos</h2>
-          <p class="text-center text-4xl font-bold text-gray-800 mb-4">447,5€</p>
+
+
+
+
+        <!-- Payment Card 1 -->
+        <!-- <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-6 max-w-sm">
+          <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Gestión Básica</h2>
+          <p class="text-center text-4xl font-bold text-gray-800 mb-4">895€</p>
           <ul class="text-gray-700 space-y-2 mb-6">
-            <li>✔️ 10 módulos en sesiones en directo</li>
-            <li>✔️ 1 sesión de seguimiento, para casos prácticos y preguntas, un mes más tarde de haber acabado la formación.</li>
-            <li>✔️ Grabación de las sesiones (disponibles durante un año)</li>
-            <li>✔️ Ejercicios y prácticas</li>
-            <li>✔️ PDF descargables</li>
-            <li>✔️ Audios con meditaciones</li>
+            <li>✔️ Publicación en los principales canales (Airbnb, Booking.com, VRBO)</li>
+            <li>✔️ Configuración inicial y optimización de anuncios</li>
+            <li>✔️ Gestión básica de reservas y calendario</li>
+            <li>✔️ Asistencia a los huéspedes 24/7</li>
+            <li>✔️ Informes mensuales de rendimiento</li>
           </ul>
           <button type="submit" 
-          class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500  hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
-          onclick="window.location.href='#contact-us';"
-          >
-            ¡Me apunto!
+          class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+          onclick="window.location.href='#contact-us';">
+            ¡Solicitar ahora!
           </button>
-        </div>
+        </div> -->
+        
+        
+        <!-- Payment Card 2 -->
+        <!-- <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-6 max-w-sm">
+          <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Gestión Completa</h2>
+          <p class="text-center text-4xl font-bold text-gray-800 mb-4">447,5€ x 2 pagos</p>
+          <ul class="text-gray-700 space-y-2 mb-6">
+            <li>✔️ Todo lo incluido en Gestión Básica</li>
+            <li>✔️ Dinámicas de precios para maximizar ingresos</li>
+            <li>✔️ Supervisión y coordinación de limpieza y lavandería</li>
+            <li>✔️ Atención personalizada a los huéspedes</li>
+            <li>✔️ Acceso a nuestra plataforma de gestión</li>
+          </ul>
+          <button type="submit" 
+          class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+          onclick="window.location.href='#contact-us';">
+            ¡Contratar!
+          </button>
+        </div> -->
+        
 
         <!-- Payment Card 3 -->
-        <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-6 max-w-sm">
-          <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">2 pagos</h2>
-          <p class="text-center text-4xl font-bold text-gray-800 mb-4">523,5€</p>
+        <!-- <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-6 max-w-sm">
+          <h2 class="text-center text-gray-600 text-lg font-semibold mb-2">Gestión Premium</h2>
+          <p class="text-center text-4xl font-bold text-gray-800 mb-4">523,5€ x 2 pagos</p>
           <ul class="text-gray-700 space-y-2 mb-6">
-            <li>✔️ 10 módulos en sesiones en directo</li>
-            <li>✔️ 1 sesión de seguimiento, para casos prácticos y preguntas, un mes más tarde de haber acabado la formación.</li>
-            <li>✔️ Grabación de las sesiones (disponibles durante un año)</li>
-            <li>✔️ Ejercicios y prácticas</li>
-            <li>✔️ PDF descargables</li>
-            <li>✔️ Audios con meditaciones</li>
+            <li>✔️ Todo lo incluido en Gestión Completa</li>
+            <li>✔️ Fotografía profesional inmobiliaria</li>
+            <li>✔️ Optimización avanzada de anuncios</li>
+            <li>✔️ Consultoría personalizada para mejorar la ocupación</li>
+            <li>✔️ Reuniones de seguimiento trimestrales</li>
           </ul>
           <button type="submit" 
-          class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500  hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
-          onclick="window.location.href='#contact-us';"
-          >
-            ¡Me apunto!
+          class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+          onclick="window.location.href='#contact-us';">
+            ¡Descubre más!
           </button>
-        </div>
+        </div> -->
+        
 
       </div>
-      </div>
+      <!-- </div> -->
     </section> 
     
 
     <!-- Contacnt us section -->
     <section 
-      class="w-full mx-auto bg-nordic-gray-light border-t border-gray-400 flex pt-2 md:pt-0 md:items-center bg-cover bg-right"
+      class="w-full mx-auto bg-nordic-gray-light border-t border-gray-300 flex pt-2 md:pt-0 md:items-center bg-cover bg-right"
       style="
         max-width: 1600px;
         height: 50rem;
@@ -612,7 +671,73 @@
                 <div class="w-full max-w-lg">
                   <div class="leading-loose">
                     
-                    <form id="contact-form" class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75">
+
+                    <form id="contact-form" class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75" onsubmit="return validateForm(event)">
+                      <p class="mb-8 text-2xl font-light text-center text-gray-700">
+                        Contact us
+                      </p>
+                      <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="text" id="contact-form-name" name="name" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Name" required />
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="email" id="contact-form-email" name="email" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Email" required />
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="text" id="contact-form-phone" name="phone" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Phone" required />
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="text" id="contact-form-location" name="location" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Location" />
+                          </div>
+                        </div>
+                    
+                        <div class="col-span-2">
+                          <label class="text-gray-700" for="rooms">
+                            Type
+                            <select id="rooms" class="block px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm w-full focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="rooms">
+                              <option value="">Select an option</option>
+                              <option value="studio">Studio</option>
+                              <option value="oneRoom">One bedroom</option>
+                              <option value="twoRoom">Two bedrooms</option>
+                              <option value="threeRoom">Three bedrooms</option>
+                              <option value="fourRoom">Four bedrooms and more</option>
+                            </select>
+                          </label>
+                        </div>
+                    
+                        <p>Are you registered?</p>
+                        <div class="flex col-span-2 items-center gap-8">
+                          <label class="inline-flex items-center">
+                            <input type="radio" name="permission" value="Si" class="w-5 h-5 text-red-600" />
+                            <span class="ml-2 text-gray-700">Si</span>
+                          </label>
+                          <label class="inline-flex items-center">
+                            <input type="radio" name="permission" value="No" class="w-5 h-5 text-red-600" />
+                            <span class="ml-2 text-gray-700">No</span>
+                          </label>
+                        </div>
+                    
+                        <div class="col-span-2">
+                          <label class="text-gray-700" for="comment">
+                            <textarea id="comment" class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Enter your comment" name="comment" rows="5" cols="40"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-span-2 text-right">
+                        <button type="submit" class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                          Send
+                        </button>
+                      </div>
+                    </form>
+                    
+                    <!-- <form id="contact-form" class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75">
                       <p class="mb-8 text-2xl font-light text-center text-gray-700">
                           Contact us
                       </p>
@@ -694,13 +819,13 @@
                               Send
                         </button>
                       </div>
-                    </form>
+                    </form> -->
                   </div>
                 </div>
               </div>
             </div>       
           </div>
-        </div>
+        <!-- </div> -->
       </div>
     </section>
 
