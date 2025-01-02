@@ -1,3 +1,21 @@
+//language selector
+function changeLanguage() {
+  const languageDropdown = document.getElementById('languages');
+  const selectedLanguage = languageDropdown.value;
+
+  // Define your redirection URLs based on selected value
+  const languageUrls = {
+    cat: '../cat/index.html',
+    eng: '../en/index.html',
+    esp: '../../index.html',
+  };
+
+  // Redirect to the selected language page
+  if (languageUrls[selectedLanguage]) {
+    window.location.href = languageUrls[selectedLanguage];
+  }
+}
+
 // Carousell for users reviews
 const scrollContainer = document.getElementById('cards-container');
 const scrollAmount = 300; // Customize the scroll distance

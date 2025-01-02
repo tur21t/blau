@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BLAU</title>
+    <link rel="icon" href="../images/logo/favicon.ico" type="image/x-icon" />
+    <link rel="icon" sizes="16x16" href="../../images/logo/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="../../images/logo/favicon-32x32.png" type="image/png">
+    <meta
+      name="description"
+      content="Alquila tu casa mientras no la usas"
+    />
+    <meta
+      name="keywords"
+      content="blau, blau-stayes, rent, cataluña"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function() {
+          emailjs.init('8stP3FjEmxxzgs41n');
+       })();
+    </script>
+  </head>
+
+  <body
+    class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal"
+  >
+    <!--Nav-->
+    <nav id="header" class="bg-gradient-to-br from-blue-300 to-green-100 border-b border-gray-300 w-full z-30 top-0 py-1"">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-6 py-3"
+      >
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+          <svg
+            class="fill-current text-gray-900"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+          >
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div
+          class="hidden md:flex md:items-center md:w-5/12 w-full order-3 md:order-1"
+          id="menu"
+        >
+          <nav>
+            <ul
+              class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"
+            >
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#mission"
+                  >¿Qué hacemos?</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#price"
+                  >Pricing</a
+                >
+              </li>
+              <!-- <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="https://tailwindcss.com/"
+                  >HOSTS</a
+                >
+              </li> -->
+              <li>
+                <a
+                  class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="order-1 md:order-2 md:w-2/12">
+          <a
+            class="flex items-center justify-center tracking-wide no-underline hover:no-underline font-bold text-blue-900 text-xl"
+            href="#"
+          >
+             BLAU
+          </a>
+        </div>
+
+        <div class="order-2 md:order-3 md:w-5/12 flex items-center justify-end" id="nav-content">
+        <!-- Language selector   -->
+          <div class="col-span-1 md:mr-6">
+              <select id="languages" 
+              class="block px-3 py-2 bg-blue-100 border border-gray-100 rounded-md shadow-md w-18 focus:outline-none focus:ring-primary-500 focus:border-primary-500" 
+              name="language"
+              onchange="changeLanguage()"
+              >
+                <option value="cat">
+                  CAT
+                </option>
+                <option value="eng">
+                  ENG
+                </option>
+                <option value="esp">
+                  ESP
+                </option>             
+              </select>
+          </div>
+        <!-- User icon   -->
+           <!-- <a class="pl-3 inline-block no-underline hover:text-black"  href="./html/es/login.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4">              
+              </circle>
+            </svg>
+          </a> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- top photo section -->
+    <section
+      class="w-full mx-auto bg-nordic-gray-light flex pt-16 md:pt-0 md:items-center justify-center bg-cover bg-left"
+      style="
+        max-width: 1600px;
+        height: 24rem;
+        background-image: 
+        url('../../images/top_section_image.jpg'); 
+        background-position: center; /* Centers the image */
+      "
+    >
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col w-full lg:w-8/12 justify-center items-start px-6 tracking-wide"
+        >
+          <div class="px-3 rounded shadow-xl bg-blue-300 bg-opacity-50">
+            <h1 class="text-gray-100 text-2xl md:text-4xl mb-2 font-bold">Alquila tu casa mientras no la usas<h1>
+          </div>
+          <div class="p-12 m-2">
+            <br/>
+          </div>
+          <div class="col-span-2 text-right">
+            <button type="submit" 
+            class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500  hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg"
+            onclick="window.location.href='#contact-us';"
+            >
+             Estudio de rentabilidad gratuito  
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about 1 section -->
+    <section id="mission" class="bg-white pt-2 pb-8"></section>
+      <div class="container py-8 px-6 mx-auto">
+        <h3
+          class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8"
+          href="#"
+        >
+        LO QUE HACEMOS MIENTRAS DEDICAS TU TIEMPO A OTRAS COSAS
+        </h3>
+        <ul class="w-full mt-6 mb-6 text-sm text-gray-600 dark:text-gray-100">
+          <li class="mb-3 flex items-center ">
+              <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                  <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                  </path>
+              </svg>
+              <span class="flex-grow">
+                Creación de anuncios en los canales de venta principales (Airbnb, booking.com, vrbo, entre otras) y gestión unificada con un programa de gestión profesional.
+              </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Gestión lavandería, ropa de cama y toallas, equipos de limpieza, imprevistos, etc. Todo lo que hace falta para el alquiler de su propiedad.
+            </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Atención a los huéspedes antes, durante y despues de la reserva los 7 días de la semana para que tengan buena experiencia, conseguir buenas calificaciones, clientes que repiten, recomendaciones.
+            </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Software de estudio de mercado con precios dinámicos para aumentar la ocupación con máxima rentabilidad.
+            </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Somos expertos en fotografía immobiliaria profesional. Hoy en dia la imagen lo es todo (o casi) y un anuncio bien hecho marca la diferencia destacando por encima de la gran mayoría.
+            </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Acceso en todo momento a su cuenta personal dentro de nuestro programa de gestión con calendario de reservas, informes de resultados, facturas y datos fiscales todo en el mismo sitio.
+            </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Disfrute su casa cuando lo desee bloqueando fechas en el calendario!
+            </span>
+          </li>
+          <li class="mb-3 flex items-center ">
+            <svg class="w-6 h-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="#10b981" viewBox="0 0 1792 1792">
+                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                </path>
+            </svg>
+            <span class="flex-grow">
+              Registro de la propiedad y de viajeros a las autoridades competentes.
+            </span>
+          </li>
+        </ul>
+        <div class="col-span-2 text-center">
+          <button type="submit" 
+          class="py-2 px-4 w-64 bg-gradient-to-br from-indigo-700 to-blue-500  hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+          onclick="window.location.href='#contact-us';"
+          >
+          Contactanos  
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- review cards scroll block -->
+    <section id="hosts">
+      <!-- cards scroll block -->
+      <div class="relative bg-blue-100 p-1" style="background-image: 
+        url('../../images/03-cut-istockphoto-1407074459.jpg'); "> <!-- Added relative to position the buttons -->
+        <!-- Left button -->
+        <button id="scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-300 text-gray px-2 py-2 rounded-r-xl hover:bg-blue-400">
+          &lt;
+        </button>
+
+        <!-- Scrollable cards container -->
+        <div id="cards-container" class="flex overflow-x-auto whitespace-nowrap p-1 scrollbar-hide items-start"> 
+
+          <!-- card 1-->
+          <div class="flex flex-shrink-0 flex-col max-w-md overflow-hidden bg-white rounded-lg shadow-xl mx-2 p-2">
+            <div class="flex flex-row mx-2 py-1">
+              <img class="w-20 h-20 rounded-lg" src="../../images/clients/01-K-no-frame.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+              <div class="p-4">
+                  <h1 class="text-2xl font-bold text-gray-900">
+                    Kristen
+                  </h1>
+              </div>
+          </div>
+            <p class="mx-2 text-sm text-gray-600" style="white-space: normal;">               
+              I enthusiastically recommend Jacint as a property manager, he has totally turned around my vacation rental.  He is extremely hard working and conscientious.  When there has been any sort of issue with a stay, he has been responsive, professional and courteous. He has automatized and synchronized all of my listings and the results have been nothing short of remarkable, with total bookings way up, net income way up, and the condition of my properties pristine. 
+              <br/>
+              If you have the opportunity to work with Jacint, you will not be sorry.
+              <br/>
+              K. Sparrow, MD
+            </p>
+            <!-- stars -->
+            <div class="flex mx-2 item-center py-1 px-2">
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+            </div>
+
+          </div>
+          <!-- vertical block for small cards -->
+          <div class="flex flex-shrink-0 flex-col">
+            <!-- card 2-->
+            <div class="flex flex-shrink-0 flex-col max-w-md overflow-hidden bg-white rounded-lg shadow-xl mx-2 mt-2 p-2">
+              <div class="flex flex-row mx-2 py-1">
+                <img class="w-20 h-20 rounded-lg" src="../../images/clients/03-TCC.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+                <div class="p-4">
+                    <h1 class="text-2xl font-bold text-gray-900">
+                      TopCapCana
+                    </h1>
+                </div>
+            </div>
+            
+            <p class="mx-2 text-sm text-gray-600" style="white-space: normal;"> 
+              Jacint truly knows how to manage.
+              <br/>
+              Basically it makes my live easier and my revenue is now 27% higher!
+              <br/>
+              He keeps me well informed and speaks several languages, that gives him an advantage.
+              <br/>
+              Thanks Jacint, feel free to give my number if someone wants more feedback from me.               
+              
+            </p>
+              <!-- stars -->
+              <div class="flex mx-2 item-center py-1 px-2">
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+              </div>
+            </div>
+          </div> 
+
+          <!-- card 3 -->
+          <div class="flex flex-shrink-0 flex-col max-w-md overflow-hidden bg-white rounded-lg shadow-xl mx-2 p-2">
+            <div class="flex flex-row mx-2 py-1">
+              <img class="w-20 h-20 rounded-lg" src="../../images/clients/02-A-Y.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+              <div class="p-4">
+                  <h1 class="text-2xl font-bold text-gray-900">
+                    Arturo y Yaiza
+                  </h1>
+              </div>
+          </div>
+            <p class="mx-2 text-sm text-gray-600" style="white-space: normal;">               
+              Desde el primer momento, Jacint nos inspiró mucha confianza. Es un co-anfitrión muy atento a los detalles, tanto en la gestión de nuestro apartamento en Begur como de las necesidades de los huéspedes. Además, nos ha dado excelentes consejos sobre los precios según las temporadas, lo que nos ha ayudado a gestionar mejor las expectativas. También se toma el tiempo para sugerir mejoras en el apartamento, lo que demuestra su dedicación y compromiso para que todo funcione perfectamente. Sin duda, es un placer contar con él como coanfitrión, y lo recomendamos al 100%. ¡Gracias, Jacint!
+            </p>
+            <!-- stars -->
+            <div class="flex mx-2 item-center py-1 px-2">
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+                <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                    </path>
+                </svg>
+            </div>
+
+          </div>
+
+          <!-- card 4 -->
+            <div class="flex flex-shrink-0 flex-col max-w-md overflow-hidden bg-white rounded-lg shadow-xl mx-2 p-2">
+              <div class="flex flex-row mx-2 py-1">
+                <img class="w-20 h-20 rounded-lg" src="../../images/clients/04-Sole.jpg" alt="user avatar" width="200" height="200" loading="lazy">
+                <div class="p-4">
+                    <h1 class="text-2xl font-bold text-gray-900">
+                      Sole
+                    </h1>
+                </div>
+            </div>
+              <p class="mx-2 text-sm text-gray-600" style="white-space: normal;">               
+                Desde que Jacint lleva la gestión el apartamento está precioso y da una rentabilidad sorprendentemente buena!
+              </p>
+              <!-- stars -->
+              <div class="flex mx-2 item-center py-1 px-2">
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+                  <svg class="w-5 h-5 text-yellow-500 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z">
+                      </path>
+                  </svg>
+              </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+
+        <!-- Right button -->
+        <button id="scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-300 text-gray px-2 py-2 rounded-l-xl hover:bg-blue-400">
+          &gt;
+        </button>
+      </div>
+    </section>
+
+    <!-- about 2 section -->
+    <section id="about" class="relative bg-white py-8">
+      <!-- <h3
+      class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-2  px-12 w-8/12"
+      href="#"
+      >
+      Quienes somos
+      </h3> -->
+      <div class="items-center flex flex-wrap py-8 px-4 ">
+        <div class="w-11/12 md:w-3/12 ml-auto mr-auto md:pr-2 mb-4">
+          <img alt="Jacint" class="max-w-full rounded-lg shadow-lg" src="../../images/J_portrait.jpg">
+        </div>
+        <div class="w-full md:w-8/12 ml-auto mr-auto">
+          <div class="md:pr-12">
+            <!-- blue sircle in case we need it-->
+            <!-- <div class="text-blue-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blue-300 mt-8">
+              <i class="fas fa-rocket text-xl">BLAU</i>
+            </div> -->
+            <h3
+            class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8"
+            href="#"
+            >
+            Quienes somos
+            </h3>
+
+            <p class="mb-4">       
+              ¡Hola!  Mi nombre es Jacint. Nací en Barcelona a finales de los 80' pero he vivido en muchos lugares hasta instalarme en la Costa Brava a caballo del Alt i el Baix Empordà, un sitio fantástico. Me apasionan las casas antiguas, el mercado inmobiliario y los espacios cuidados. Tras varios años gestionando mi apartamento en Tavertet, un pueblo precioso, empecé a gestionar propiedades en el programa Co-anfitrión Experto de Airbnb. En la actualidad gestiono más de 10 propiedades y cuento con un equipo de colaboradores de confianza. También contamos con personal de limpieza en distintos puntos de Catalunya y varias empresas de lavandería asociadas. 
+            </p>
+            <p class="mb-4">
+              Estoy siempre abierto a nuevas opotunidades y proyectos interesantes en cualquier ámbito.
+            </p>
+            <p class="mb-8">
+              Me gusta hablar con las personas, conocer su historia y la de sus casas. Será un placer saber más de la suya!
+            </p>
+            <!-- <ul class="list-none mt-6">
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fas fa-fingerprint"></i></span>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500">
+                      Carefully crafted components
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="fab fa-html5"></i></span>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500">Amazing page examples</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"><i class="far fa-paper-plane"></i></span>
+                  </div>
+                  <div>
+                    <h4 class="text-blueGray-500">Dynamic components</h4>
+                  </div>
+                </div>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- price section -->
+    <section>
+      <div  id="price" class="bg-gradient-to-br from-blue-300 to-green-100 border-t border-gray-300 flex flex-col justify-center items-center md:flex-row gap-2 p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+          <!-- Payment Card 1 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-2 max-w-sm w-full h-full flex flex-col justify-between">
+            <h2 class="text-center text-gray-600 text-2xl font-semibold mb-2">Gestión completa 15% sobre tus ingresos</h2>
+            <!-- <p class="text-center text-4xl font-bold text-gray-800 mb-4">895€</p> -->
+            <ul class="text-gray-700 space-y-2 mb-6">
+              <li>✔️ Publicación en los principales canales (Airbnb, Booking.com, VRBO)</li>
+              <li>✔️ Configuración inicial y optimización de anuncios</li>
+              <li>✔️ Gestión básica de reservas y calendario</li>
+              <li>✔️ Asistencia a los huéspedes 24/7</li>
+              <li>✔️ Supervisión y coordinación de limpieza y lavandería</li>
+              <li>✔️ Informes mensuales de rendimiento</li>
+            </ul>
+            <button type="submit" 
+            class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            onclick="window.location.href='#contact-us';">
+              ¡Solicitar ahora!
+            </button>
+          </div>
+        
+          <!-- Payment Card 2 -->
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg p-6 m-2 max-w-sm w-full h-full flex flex-col justify-between">
+            <h2 class="text-center text-gray-600 text-2xl font-semibold mb-2">Gestión avanzada 15% sobre tus ingresos + 50€/mes</h2>
+            <!-- <p class="text-center text-4xl font-bold text-gray-800 mb-4">447,5€ x 2 pagos</p> -->
+            <ul class="text-gray-700 space-y-2 mb-6">
+              <li>✔️ Todo lo incluido en Gestión Básica</li>
+              <li>✔️ Dinámicas de precios para maximizar ingresos</li>
+              <li>✔️ Gestor de evaluaciones</li>
+              <li>✔️ Acceso a nuestra plataforma de gestión</li>
+            </ul>
+            <button type="submit" 
+            class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
+            onclick="window.location.href='#contact-us';">
+              ¡Contratar!
+            </button>
+          </div>
+        
+        </div>
+      </div>
+    </section> 
+    
+
+    <!-- Contacnt us section -->
+    <section 
+      class="w-full mx-auto bg-nordic-gray-light border-t border-gray-300 flex pt-2 md:pt-0 md:items-center bg-cover bg-right"
+      style="
+        max-width: 1600px;
+        height: 54rem;
+        background-image: 
+        url('../../images/02-cut-istockphoto-909979066.jpg'); 
+      "
+    >
+      <div id="contact-us" class="container py-2 px-6 mx-auto">              
+          <div class="container flex items-center ustify-center flex-1 h-full mx-auto">        
+            <div class="w-full font-sans bg-cover bg-landscape">
+              <div class="container flex items-center justify-center flex-1 h-full mx-auto">
+                <div class="w-full max-w-lg">
+                  <div class="leading-loose">
+                    
+
+                    <form id="contact-form" class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75" onsubmit="return validateForm(event)">
+                      <p class="mb-8 text-2xl font-light text-center text-gray-700">
+                        Contáctanos
+                      </p>
+                      <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="text" id="contact-form-name" name="name" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Nombre" required />
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="email" id="contact-form-email" name="email" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Correo electrónico" required />
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="text" id="contact-form-phone" name="phone" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Teléfono" required />
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class="relative">
+                            <input type="text" id="contact-form-location" name="location" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Ubicación" />
+                          </div>
+                        </div>
+                    
+                        <div class="col-span-2">
+                          <label class="text-gray-700" for="rooms">
+                            Tipo
+                            <select id="rooms" class="block px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm w-full focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="rooms">
+                              <option value="">Selecciona una opción</option>
+                              <option value="studio">Estudio</option>
+                              <option value="oneRoom">Una habitación</option>
+                              <option value="twoRoom">Dos habitaciones</option>
+                              <option value="threeRoom">Tres habitaciones</option>
+                              <option value="fourRoom">Cuatro habitaciones o más</option>
+                            </select>
+                          </label>
+                        </div>
+                    
+                        <p>¿Tiene licencia turística?</p>
+                        <div class="flex col-span-2 items-center gap-8">
+                          <label class="inline-flex items-center">
+                            <input type="radio" name="permission" value="Si" class="w-5 h-5 text-red-600" />
+                            <span class="ml-2 text-gray-700">Sí</span>
+                          </label>
+                          <label class="inline-flex items-center">
+                            <input type="radio" name="permission" value="No" class="w-5 h-5 text-red-600" />
+                            <span class="ml-2 text-gray-700">No</span>
+                          </label>
+                        </div>
+                    
+                        <div class="col-span-2">
+                          <label class="text-gray-700" for="comment">
+                            <textarea id="comment" class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Escribe tu comentario" name="comment" rows="5" cols="40"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-span-2 text-right">
+                        <button type="submit" class="py-2 px-4 bg-gradient-to-br from-indigo-700 to-blue-500 hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+                          Enviar
+                        </button>
+                      </div>
+                    </form>
+                                        
+                    <!-- <form id="contact-form" class="max-w-lg p-10 m-auto rounded shadow-xl bg-gray-300 bg-opacity-75">
+                      <p class="mb-8 text-2xl font-light text-center text-gray-700">
+                          Contact us
+                      </p>
+                      <div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+                        <div class="col-span-2">
+                          <div class=" relative ">
+                            <input type="text" id="contact-form-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="Name"/>
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class=" relative ">
+                            <input type="text" id="contact-form-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="email"/>
+                          </div>
+                        </div>
+
+                        <div class="col-span-2">
+                          <div class=" relative ">
+                            <input type="text" id="contact-form-phone" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="phone" required/>
+                          </div>
+                        </div>
+                        <div class="col-span-2">
+                          <div class=" relative ">
+                            <input type="text" id="contact-form-location" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent" placeholder="location"/>
+                          </div>
+                        </div>
+
+
+
+                        <div class="col-span-2">
+                          <label class="text-gray-700" for="rooms">
+                              Type
+                              <select id="rooms" class="block px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm w-full focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="rooms">
+                                  <option value="">
+                                      Select an option
+                                  </option>
+                                  <option value="studio">
+                                      Studio
+                                  </option>
+                                  <option value="oneRoom">
+                                      One bedroom
+                                  </option>
+                                  <option value="twoRoom">
+                                      Two bedrooms
+                                  </option>
+                                  <option value="threeRoom">
+                                    Three bedrooms
+                                </option>
+                                <option value="fourRoom">
+                                    Four bedrooms and more
+                              </option>
+                              </select>
+                          </label>
+                        </div>
+                        
+                        <p>Are you registered?</p>
+                        <div class="flex col-span-2 items-center gap-8">
+                          <label class="inline-flex items-center">
+                            <input type="radio" name="permission" value="Si" class="w-5 h-5 text-red-600"/>
+                              <span class="ml-2 text-gray-700">
+                                Si
+                              </span>
+                          </label>
+                          <label class="inline-flex items-center">
+                              <input type="radio" name="permission" value="No" class="w-5 h-5 text-red-600"/>
+                            <span class="ml-2 text-gray-700">
+                              No
+                            </span>
+                          </label>
+                        </div>
+                        
+                        <div class="col-span-2">
+                            <label class="text-gray-700" for="name">
+                              <textarea id="comment" class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"  placeholder="Enter your comment" name="comment" rows="5" cols="40"></textarea>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="col-span-2 text-right">
+                        <button type="submit" class="py-2 px-4  bg-gradient-to-br from-indigo-700 to-blue-500  hover:from-indigo-900 hover:to-blue-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                              Send
+                        </button>
+                      </div>
+                    </form> -->
+                  </div>
+                </div>
+              </div>
+            </div>       
+          </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <footer class="container mx-auto bg-white py-2 border-t border-gray-400">
+      <div class="container flex px-3 pt-2">
+        <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full lg:w-1/2">
+            <div class="px-3 md:px-0">
+              <h3 class="font-bold text-blue-900">BLAU</h3>
+              <p class="py-2">
+                Alquila tu casa mientras no la usas
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-4 md:mt-0"
+          >
+            <div class="px-3 md:px-0">
+              <div class="w-full flex items-center py-2 mt-0">
+                
+                <!-- faceboo and instagram icons -->
+                <!-- <a href="#" class="mx-2">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    ></path>
+                  </svg>
+                </a> -->
+                <a href="https://www.instagram.com/stayblau/profilecard/?igsh=NTk4NzJ0eHFyYnBu" class="mx-2">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
