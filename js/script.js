@@ -10,6 +10,35 @@ function changeLanguage() {
     esp: '../../index.html',
   };
 
+  console.log(
+    `t1 languageUrls: ${JSON.stringify(
+      languageUrls
+    )} selectedLanguage: ${selectedLanguage}`
+  );
+
+  // Redirect to the selected language page
+  if (languageUrls[selectedLanguage]) {
+    window.location.href = languageUrls[selectedLanguage];
+  }
+}
+
+function changeLanguageEspIndex() {
+  const languageDropdown = document.getElementById('languages');
+  const selectedLanguage = languageDropdown.value;
+
+  // Define your redirection URLs based on selected value
+  const languageUrls = {
+    cat: 'html/cat/index.html',
+    eng: 'html/en/index.html',
+    esp: 'index.html',
+  };
+
+  console.log(
+    `t1 languageUrls: ${JSON.stringify(
+      languageUrls
+    )} selectedLanguage: ${selectedLanguage}`
+  );
+
   // Redirect to the selected language page
   if (languageUrls[selectedLanguage]) {
     window.location.href = languageUrls[selectedLanguage];
